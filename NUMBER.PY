@@ -13,7 +13,8 @@ def fac(n):
     
 def SPECIAL(number):
     fact = 0
-    for i, num in enumerate(number):
+    numbers = [int(num) for num in str(number)]
+    for num in numbers:
         fact += fac(num)
     if fact == number:
         return 1

@@ -34,7 +34,7 @@ options = """
             enter your option: """
 
 while True:
-    opt = int(input(options))
+    opt = eval(input(options))
     if opt == 1:
         palindrome_list()
     elif opt == 2:
